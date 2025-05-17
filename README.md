@@ -10,3 +10,10 @@ Execute the following command in the project directory to see the classes in act
 ruby demo.rb
 ```
 
+
+## Running tests
+Run the test suite with Rake:
+
+```bash
+rake
+```
