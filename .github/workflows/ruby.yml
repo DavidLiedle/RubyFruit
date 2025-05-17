@@ -1,0 +1,25 @@
+name: Ruby CI
+
+on:
+  pull_request:
+  push:
+    branches: [ main, master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: false
+      - name: Check syntax
+        run: |
+          for file in $(git ls-files '*.rb'); do
+            ruby -c "$file" || exit 1
+          done
+      - name: Run demo script
+        run: ruby demo.rb
