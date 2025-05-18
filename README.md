@@ -1,7 +1,7 @@
 # RubyFruit
 RubyFruit is an educational Ruby project that teaches core Object-Oriented Programming concepts.
 
-It features a base `Fruit` class with subclasses like `Apple`, `Banana`, and `Orange`, demonstrating inheritance, polymorphism, encapsulation, and modules. Each file includes inline comments aimed at beginners.
+It features a base `Fruit` class with subclasses like `Apple`, `Banana`, `Orange`, `Pear`, `Grape`, `Lemon`, `Grapefruit`, and a variety of `Cherry` types such as `BingCherry` and `RainierCherry`, demonstrating inheritance, polymorphism, encapsulation, and modules. Each file includes inline comments aimed at beginners.
 
 The project also shows some more advanced Ruby features:
 
