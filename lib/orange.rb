@@ -15,6 +15,6 @@ class Orange < Fruit
   # Override Fruit#describe to include segment information.
   def describe
     super
-    puts "Segment count: #{segment_count}."
+    puts Localization.t('orange.segment_count', segment_count: segment_count)
   end
 end

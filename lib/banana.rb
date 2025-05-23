@@ -13,7 +13,7 @@ class Banana < Fruit
   # This method overrides Fruit#describe to mention the curvature.
   def describe
     super
-    puts "Curvature: #{curvature} degrees."
+    puts Localization.t('banana.curvature', curvature: curvature)
   end
 
   private

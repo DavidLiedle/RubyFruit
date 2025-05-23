@@ -16,6 +16,9 @@ require_relative 'lib/rainier_cherry'
 require_relative 'lib/fruit_basket'
 require_relative 'lib/fruit_factory'
 
+# Set the locale based on the first command line argument (default :en)
+Localization.locale = (ARGV.shift || 'en').to_sym
+
 # Instantiate some fruits using the FruitFactory which leverages
 # Ruby's metaprogramming to look up the correct class.
 apple = FruitFactory.apple(name: 'Apple', color: 'red', ripe: true, crunch_level: 7)

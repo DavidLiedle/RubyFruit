@@ -13,6 +13,6 @@ class Grapefruit < Fruit
 
   def describe
     super
-    puts "Bitterness: #{bitterness}."
+    puts Localization.t('grapefruit.bitterness', bitterness: bitterness)
   end
 end
