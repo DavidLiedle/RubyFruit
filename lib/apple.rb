@@ -14,6 +14,6 @@ class Apple < Fruit
   # This method overrides Fruit#describe to include the crunch level.
   def describe
     super
-    puts "Crunch level: #{crunch_level}."
+    puts Localization.t('apple.crunch_level', crunch_level: crunch_level)
   end
 end

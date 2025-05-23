@@ -1,10 +1,12 @@
 # frozen_string_literal: true
 
+require_relative 'localization'
+
 # This module provides squeezing behavior for fruits that can be juiced.
 module Squeezable
   # Prints a simple message explaining that the fruit is being squeezed.
   def squeeze
-    puts "You squeeze the #{name} and juice comes out!"
+    puts Localization.t('fruit.squeeze', name: name)
   end
 end
 
@@ -28,7 +30,8 @@ class Fruit
   # will override this method to add their own details while still
   # leveraging the basic description provided here.
   def describe
-    puts "This is a #{color} #{name}. It is #{ripeness_description}."
+    puts Localization.t('fruit.description', color: color, name: name,
+                        ripeness: ripeness_description)
   end
 
   private
@@ -36,6 +39,7 @@ class Fruit
   # A helper method that other methods can use. Marking it private keeps it
   # hidden from users of the class, illustrating encapsulation.
   def ripeness_description
-    ripe ? "ripe" : "not ripe yet"
+    key = ripe ? 'fruit.ripe' : 'fruit.not_ripe'
+    Localization.t(key)
   end
 end

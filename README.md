@@ -9,10 +9,15 @@ The project also shows some more advanced Ruby features:
 * `FruitFactory` uses metaprogramming (`method_missing`) to dynamically create fruit objects.
 
 ## Running the demonstration
-Execute the following command in the project directory to see the classes in action:
+Execute the following command in the project directory to see the classes in action.
+You can optionally pass a locale (`en` or `es`) to display the output in a different language:
 
 ```bash
-ruby demo.rb
+# English output
+ruby demo.rb en
+
+# Spanish output
+ruby demo.rb es
 ```
 
 

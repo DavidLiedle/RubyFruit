@@ -1,0 +1,37 @@
+fruit:
+  squeeze: "Exprimes la %{name} y sale jugo!"
+  description: "Esta es una %{name} %{color}. Está %{ripeness}."
+  ripe: "madura"
+  not_ripe: "no está madura todavía"
+
+apple:
+  crunch_level: "Nivel de crujido: %{crunch_level}."
+
+banana:
+  curvature: "Curvatura: %{curvature} grados."
+
+orange:
+  segment_count: "Número de gajos: %{segment_count}."
+
+pear:
+  softness: "Nivel de suavidad: %{softness}."
+
+grape:
+  description: "Esta uva es %{descriptor}."
+  seedless: "sin semillas"
+  with_seeds: "con semillas"
+
+lemon:
+  tartness: "Acidez: %{tartness}."
+
+grapefruit:
+  bitterness: "Amargor: %{bitterness}."
+
+cherry:
+  sweetness: "Dulzura: %{sweetness}."
+
+bing_cherry:
+  description: "Esta es una %{name} %{ripe} con un nivel de dulzura de %{sweetness}."
+
+rainier_cherry:
+  variety: "Variedad: Rainier."

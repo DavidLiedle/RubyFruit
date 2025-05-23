@@ -15,7 +15,8 @@ class Grape < Fruit
   # Override Fruit#describe to mention whether the grape is seedless.
   def describe
     super
-    description = seedless ? 'seedless' : 'with seeds'
-    puts "This grape is #{description}."
+    descriptor_key = seedless ? 'grape.seedless' : 'grape.with_seeds'
+    descriptor = Localization.t(descriptor_key)
+    puts Localization.t('grape.description', descriptor: descriptor)
   end
 end

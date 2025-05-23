@@ -4,6 +4,6 @@
 class RainierCherry < Cherry
   def describe
     super
-    puts 'Variety: Rainier.'
+    puts Localization.t('rainier_cherry.variety')
   end
 end

@@ -13,6 +13,6 @@ class Pear < Fruit
   # Override Fruit#describe to include the softness value.
   def describe
     super
-    puts "Softness level: #{softness}."
+    puts Localization.t('pear.softness', softness: softness)
   end
 end

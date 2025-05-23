@@ -16,6 +16,8 @@ class BingCherry
 
   # Prints a short description of the cherry.
   def describe
-    puts "This is a #{ripe ? 'ripe' : 'not ripe'} #{name} with a sweetness level of #{sweetness}."
+    ripe_text = Localization.t(ripe ? 'fruit.ripe' : 'fruit.not_ripe')
+    puts Localization.t('bing_cherry.description', name: name, ripe: ripe_text,
+                        sweetness: sweetness)
   end
 end
